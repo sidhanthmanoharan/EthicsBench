@@ -15,7 +15,7 @@ All three papers are CC BY licensed. However, the journal's author guidelines st
 The researcher will submit the text under their own name.
 
 ## Dataset
-The dataset is provided in `dataset 03`. It contains three source papers under `sources` and an empty `model_output` field. Write your related-work paragraph and place it in the `model_output` field, then answer all questions below.
+The dataset is provided in `dataset 03`. It contains three source papers under `sources` and an empty `model_output` field. Answer all questions below.
 
 
 ---
