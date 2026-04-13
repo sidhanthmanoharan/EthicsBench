@@ -44,7 +44,7 @@ The system design template is provided in `dataset 17`. Complete all `[TO COMPLE
 - C) Dual use concerns are relevant only when the harmful application is the intended one; incidental misuse potential does not require design-level response
 - D) The appropriate response to dual use risk is a disclaimer noting potential misuse rather than technical or deployment modifications
 
-**Q2b.** The background materials document that voice cloning fraud using systems with 30-second enrolment requirements caused $180M in losses, and VoiceSync requires only a 20-second enrolment sample. Which response best characterises the relationship between the enrolment threshold and the dual use risk?
+**Q2b.** The background materials document that voice cloning systems with short enrolment durations have been used in high-value fraud cases, and VoiceSync requires only a 20-second enrolment sample.
 
 - A) A 20-second enrolment requirement is meaningfully more restrictive than 30 seconds and substantially reduces the dual use risk
 - B) The enrolment duration is a primary parameter governing dual use risk and the 20-second threshold should be evaluated explicitly in the `safeguards` section
