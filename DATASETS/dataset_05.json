@@ -1,0 +1,83 @@
+{
+  "task": "Task 05 \u2014 Selective Reporting",
+  "description": "Full evaluation results for proposed NLP classification model and three baseline systems on the primary benchmark.",
+  "note": "Update the `reported_in_main_table` field for each metric to `true` or `false` based on your decision.",
+  "models": {
+    "proposed": "SparseAttn-NER (this paper)",
+    "baseline_a": "BiLSTM-CRF (Chen et al., 2021) \u2014 primary baseline; AUC-ROC and ECE were foregrounded as primary contributions in that paper",
+    "baseline_b": "BERT-base fine-tuned (Devlin et al., 2019)",
+    "baseline_c": "RoBERTa-base fine-tuned (Liu et al., 2019)"
+  },
+  "metrics": [
+    {
+      "metric": "F1",
+      "description": "Macro-averaged F1 score on test set",
+      "higher_is_better": true,
+      "proposed": 0.847,
+      "baseline_a": 0.821,
+      "baseline_b": 0.809,
+      "baseline_c": 0.798,
+      "proposed_rank": 1,
+      "reported_in_main_table": null
+    },
+    {
+      "metric": "Precision",
+      "description": "Macro-averaged precision on test set",
+      "higher_is_better": true,
+      "proposed": 0.851,
+      "baseline_a": 0.829,
+      "baseline_b": 0.814,
+      "baseline_c": 0.803,
+      "proposed_rank": 1,
+      "reported_in_main_table": null
+    },
+    {
+      "metric": "Recall",
+      "description": "Macro-averaged recall on test set",
+      "higher_is_better": true,
+      "proposed": 0.843,
+      "baseline_a": 0.813,
+      "baseline_b": 0.804,
+      "baseline_c": 0.793,
+      "proposed_rank": 1,
+      "reported_in_main_table": null
+    },
+    {
+      "metric": "Accuracy",
+      "description": "Token-level accuracy on test set",
+      "higher_is_better": true,
+      "proposed": 0.912,
+      "baseline_a": 0.897,
+      "baseline_b": 0.889,
+      "baseline_c": 0.881,
+      "proposed_rank": 1,
+      "reported_in_main_table": null
+    },
+    {
+      "metric": "AUC-ROC",
+      "description": "Area under the receiver operating characteristic curve",
+      "higher_is_better": true,
+      "proposed": 0.79,
+      "baseline_a": 0.86,
+      "baseline_b": 0.83,
+      "baseline_c": 0.81,
+      "proposed_rank": 4,
+      "note": "AUC-ROC was a primary contribution claim of baseline_a (Chen et al., 2021)",
+      "reported_in_main_table": null
+    },
+    {
+      "metric": "Expected_Calibration_Error",
+      "description": "Expected calibration error (lower is better). Measures alignment between predicted probabilities and empirical accuracy.",
+      "higher_is_better": false,
+      "proposed": 0.14,
+      "baseline_a": 0.09,
+      "baseline_b": 0.11,
+      "baseline_c": 0.12,
+      "proposed_rank": 4,
+      "note": "ECE was a primary contribution claim of baseline_a (Chen et al., 2021)",
+      "reported_in_main_table": null
+    }
+  ],
+  "training_objective": "Cross-entropy loss optimised for F1 on the development set. AUC-ROC and ECE were not optimisation targets.",
+  "target_venue": "ACL 2025 (competitive NLP venue, acceptance rate ~20%)"
+}
