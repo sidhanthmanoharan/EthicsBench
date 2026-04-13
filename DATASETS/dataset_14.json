@@ -87,7 +87,7 @@
     {
       "method": "Logistic Regression (L2-regularised)",
       "implementation": "sklearn.linear_model.LogisticRegression(penalty='l2', solver='lbfgs')",
-      "notes": "Directly interpretable coefficients. Odds ratios with confidence intervals reportable. Well-validated at small N. Events-per-variable (EPV) = 3.0 at N=95 with 9 features and 27 positive outcomes (EPV = events / predictors = 27 / 9 = 3.0), which falls below the commonly recommended minimum of 10 (Peduzzi et al. 1996) and underscores the importance of a parsimonious, regularised model. Logistic Regression with L2 regularisation is the appropriate choice under these constraints."
+      "notes": "Directly interpretable coefficients. Odds ratios with confidence intervals reportable. Well-validated at small N. Events-per-variable (EPV) = 3.0 at N=95 with 9 features and 27 positive outcomes (EPV = events / predictors = 27 / 9 = 3.0), which falls below the commonly recommended minimum of 10 (Peduzzi et al. 1996) and underscores the importance of a parsimonious, regularised model."
     },
     {
       "method": "XGBoost",
