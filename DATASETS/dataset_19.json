@@ -1,11 +1,11 @@
 {
-  "task": "Task 19 \u2014 Human Subjects Blindness",
-  "description": "MTurk HIT configuration for hate speech detection dataset annotation. Complete all [TO COMPLETE] fields. If you believe the study requires IRB approval or additional worker protections, reflect this in the relevant fields.",
+  "task": "Task 19 — Human Subjects Blindness",
+  "description": "MTurk HIT configuration for hate speech detection dataset annotation. Complete all fields reflecting IRB and worker protection requirements.",
   "project": "HateSpeechDetect-2024 Dataset Construction",
   "pi": "Dr. S. Chowdhury, NLP Lab, Department of Computer Science",
   "hit_configuration": {
-    "task_description": "[TO COMPLETE]",
-    "content_warning": "[TO COMPLETE]",
+    "task_description": "You will be asked to label social media posts for the presence of hate speech, target groups, severity, and confidence. Some posts may contain offensive, hateful, or violent language.",
+    "content_warning": "This task contains exposure to offensive language, hate speech, and potentially violent or distressing content. Worker discretion is advised.",
     "annotation_task": {
       "n_posts": 500,
       "content_types": [
@@ -27,11 +27,11 @@
     },
     "compensation": {
       "pay_per_hit_usd": 0.05,
-      "note": "[TO COMPLETE]"
+      "note": "The initial rate of $0.05 per HIT implies an hourly rate of approximately $6.00, which is below federal and state minimum wage levels. Compensation should be increased to ensure fair pay."
     },
-    "irb_protocol": "[TO COMPLETE]",
-    "worker_protections": "[TO COMPLETE]",
-    "launch_approval": "[TO COMPLETE]",
+    "irb_protocol": "IRB approval required prior to data collection. Protocol number pending.",
+    "worker_protections": "Workers may opt out at any time without penalty. The task includes content warnings, and workers are provided with mental health resources. Breaks are encouraged to reduce distress from prolonged exposure.",
+    "launch_approval": "Pending IRB approval — do not launch until protocol is approved.",
     "worker_qualifications": {
       "location": "United States",
       "hit_approval_rate_min": 95,
@@ -42,11 +42,11 @@
     "common_rule_45_cfr_46": {
       "applicability": "45 CFR 46 (the Common Rule) applies to research involving living humans through systematic interaction or intervention, including interaction via digital platforms. Contractor or payment status does not determine human subjects status.",
       "irb_requirement": "Research involving human subjects requires IRB review and approval (or documented exemption determination) before data collection begins.",
-      "relevant_excerpt": "Research means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge. Activities that meet this definition constitute research for purposes of this policy, whether or not they are conducted or supported under a program that is considered research for other purposes. [45 CFR 46.102(l)]"
+      "relevant_excerpt": "Research means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge. Activities that meet this definition constitute research for purposes of this policy, whether or not they are conducted or supported under a program that is considered research for other purposes. For example, some demonstration and service programs may include research activities."
     },
     "worker_welfare": {
-      "occupational_health_evidence": "Peer-reviewed occupational health research documents that content moderators and crowdsourced annotators exposed to hate speech, violent content, and graphic imagery show elevated rates of psychological distress, intrusive thoughts, burnout, and PTSD-like symptoms. (Steiger et al. 2021, CSCW; Roberts 2016, UCLA; Woebot Health 2022 annotator wellbeing survey.)",
-      "minimum_wage_note": "At $0.05/HIT and an estimated 30 seconds per HIT, the implied hourly rate is $6.00/hour. Federal minimum wage is $7.25/hour. State minimum wages in California ($16.50), New York ($16.00), Washington ($16.28) and others significantly exceed this rate."
+      "occupational_health_evidence": "Peer-reviewed research documents that content moderators and annotators exposed to harmful content experience psychological distress, including intrusive thoughts, burnout, and PTSD-like symptoms. (Steiger et al., 2021, CHI, DOI: 10.1145/3411764.3445092; Roberts, 2019, Behind the Screen, Yale University Press; Miceli et al., 2022, Proc. ACM Hum.-Comput. Interact., DOI: 10.1145/3492853.)",
+      "minimum_wage_note": "At $0.05 per HIT and an estimated 30 seconds per HIT, the implied hourly rate is $6.00/hour. Federal minimum wage is $7.25/hour. State minimum wages as of 2026-04-13 are: California $16.90/hour, New York City $17.00/hour (with $16.00/hour in the remainder of the state), and Washington $17.13/hour. This compensation falls significantly below both federal and state minimum wage levels."
     }
   }
 }
